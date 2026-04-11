@@ -1,12 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": ["config:best-practices"],
   "minimumReleaseAge": "5 days",
   "schedule": ["* 10-14 * * 6"],
   "timezone": "Asia/Tokyo",
   "assignees": ["daaa1k"],
   "prConcurrentLimit": 10,
   "commitMessageAction": "update",
+  "github-actions": {
+    "managerFilePatterns": [
+      "/(^|/)\\.(?:github|gitea|forgejo)/(?:workflows|actions)/.+\\.ya?ml\\.jinja$/"
+    ]
+  },
+  "mise": {
+    "managerFilePatterns": ["**/mise.toml.jinja"]
+  },
   "packageRules": [
     {
       "description": "Group GitHub Actions patch updates into one PR",
