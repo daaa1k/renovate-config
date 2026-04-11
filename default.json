@@ -54,6 +54,19 @@
       "commitMessagePrefix": "build:"
     },
     {
+      "description": "Group Bun patch updates into one PR",
+      "matchManagers": ["bun"],
+      "matchUpdateTypes": ["patch"],
+      "groupName": "bun patch",
+      "commitMessagePrefix": "build:"
+    },
+    {
+      "description": "Prefix Bun module updates",
+      "matchManagers": ["bun"],
+      "matchUpdateTypes": ["major", "minor"],
+      "commitMessagePrefix": "build:"
+    },
+    {
       "description": "Do not apply minimum release age to copier",
       "matchManagers": ["copier"],
       "minimumReleaseAge": null,
