@@ -67,6 +67,19 @@
       "commitMessagePrefix": "build:"
     },
     {
+      "description": "Group NPM module patch updates into one PR",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["patch"],
+      "groupName": "npm patch dependencies",
+      "commitMessagePrefix": "build:"
+    },
+    {
+      "description": "Prefix non-patch NPM module updates",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major", "minor"],
+      "commitMessagePrefix": "build:"
+    },
+    {
       "description": "Do not apply minimum release age to copier",
       "matchManagers": ["copier"],
       "minimumReleaseAge": null,
