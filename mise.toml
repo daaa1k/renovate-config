@@ -1,0 +1,3 @@
+[tasks.renovate-check]
+run = "npx --yes --package renovate -- renovate-config-validator default.json"
+description = "Validate default.json"
