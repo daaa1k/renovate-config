@@ -36,6 +36,12 @@
       "minimumReleaseAge": null
     },
     {
+      "description": "Do not update daaa1k/common-lint via Renovate",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["daaa1k/common-lint"],
+      "enabled": false
+    },
+    {
       "description": "Group mise patch updates into one PR",
       "matchManagers": ["mise"],
       "matchUpdateTypes": ["patch"],
