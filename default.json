@@ -103,6 +103,11 @@
       "matchManagers": ["copier"],
       "minimumReleaseAge": null,
       "commitMessagePrefix": "chore:"
+    },
+    {
+      "description": "Do not apply minimum release age to daaa1k/common-config",
+      "matchPackageNames": ["daaa1k/common-config"],
+      "minimumReleaseAge": null
     }
   ]
 }
